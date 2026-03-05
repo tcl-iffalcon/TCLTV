@@ -22,10 +22,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_trt3", name: "TRT 3",
-      logo: BASE_LOGO + "trt-tr.png",
-      genre: "General", country: "TR",
-      streams: [
-        { url: "https://tv-trt3.live.trt.com.tr/master.m3u8", title: "TRT 3" }
+      logo: BASE_LOGO + "trt-3-tr.png",
       ]
     },
     {
@@ -56,7 +53,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_show", name: "Show TV",
-      logo: BASE_LOGO + "show-tv-tr.png",
+      logo: BASE_LOGO + "show-tr.png",
       genre: "General", country: "TR",
       streams: [
         { url: "https://canli.ensonhaber.com/tr/showtv/index.m3u8", title: "Show TV HD" },
@@ -82,7 +79,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_tv8", name: "TV8",
-      logo: BASE_LOGO + "tv-8-tr.png",
+      logo: BASE_LOGO + "tv8-tr.png",
       genre: "General", country: "TR",
       streams: [
         { url: "https://tv8-live.daioncdn.net/tv8/tv8.m3u8", title: "TV8 HD" },
@@ -164,7 +161,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_tv100", name: "TV100",
-      logo: BASE_LOGO + "tv-100-tr.png",
+      logo: BASE_LOGO + "tv100-tr.png",
       genre: "News", country: "TR",
       streams: [
         { url: "https://tv100-live.daioncdn.net/tv100/tv100.m3u8", title: "TV100 HD" }
@@ -207,7 +204,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_sports_tv", name: "Sports TV",
-      logo: DEFAULT_LOGO,
+      logo: BASE_LOGO + "sports-tv-tr.png",
       genre: "Sports", country: "TR",
       streams: [
         { url: "https://live.sportstv.com.tr/hls/low/sportstv.m3u8", title: "Sports TV" }
@@ -218,7 +215,7 @@ const CHANNELS = {
   "muzik": [
     {
       id: "livetv_power_turk", name: "Power Türk TV",
-      logo: BASE_LOGO + "power-turk-tr.png",
+      logo: BASE_LOGO + "powerturk-tr.png",
       genre: "Music", country: "TR",
       streams: [
         { url: "https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8", title: "Power Türk HD" },
@@ -228,7 +225,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_power_love", name: "Power Love",
-      logo: BASE_LOGO + "power-turk-tr.png",
+      logo: BASE_LOGO + "power-tv-tr.png",
       genre: "Music", country: "TR",
       streams: [
         { url: "https://livetv.powerapp.com.tr/plove/love.smil/playlist.m3u8", title: "Power Love HD" }
@@ -236,7 +233,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_power_dance", name: "Power Dance",
-      logo: BASE_LOGO + "power-turk-tr.png",
+      logo: BASE_LOGO + "power-tv-tr.png",
       genre: "Music", country: "TR",
       streams: [
         { url: "https://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8", title: "Power Dance HD" }
@@ -244,7 +241,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_power_akustik", name: "Power Akustik",
-      logo: BASE_LOGO + "power-turk-tr.png",
+      logo: BASE_LOGO + "power-tv-tr.png",
       genre: "Music", country: "TR",
       streams: [
         { url: "https://livetv.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8", title: "Power Akustik HD" }
@@ -252,7 +249,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_power_slow", name: "Power Slow",
-      logo: BASE_LOGO + "power-turk-tr.png",
+      logo: BASE_LOGO + "power-tv-tr.png",
       genre: "Music", country: "TR",
       streams: [
         { url: "https://livetv.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8", title: "Power Slow HD" }
@@ -260,7 +257,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_power_taptaze", name: "Power Taptaze",
-      logo: BASE_LOGO + "power-turk-tr.png",
+      logo: BASE_LOGO + "power-tv-tr.png",
       genre: "Music", country: "TR",
       streams: [
         { url: "https://livetv.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8", title: "Power Taptaze HD" }
@@ -284,7 +281,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_number1_ask", name: "Number 1 Aşk",
-      logo: BASE_LOGO + "number-1-turk-tr.png",
+      logo: BASE_LOGO + "nr1-ask-tr.png",
       genre: "Music", country: "TR",
       streams: [
         { url: "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e18f9cea15_1/playlist.m3u8", title: "Number 1 Aşk HD" }
@@ -292,7 +289,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_number1_damar", name: "Number 1 Damar",
-      logo: BASE_LOGO + "number-1-turk-tr.png",
+      logo: BASE_LOGO + "nr1-damar-tr.png",
       genre: "Music", country: "TR",
       streams: [
         { url: "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e198784bdc_1/playlist.m3u8", title: "Number 1 Damar HD" }
@@ -300,7 +297,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_number1_dance", name: "Number 1 Dance",
-      logo: BASE_LOGO + "number-1-turk-tr.png",
+      logo: BASE_LOGO + "nr1-dance-tr.png",
       genre: "Music", country: "TR",
       streams: [
         { url: "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2aa8acf44_1/playlist.m3u8", title: "Number 1 Dance HD" }
@@ -308,7 +305,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_number1_turk", name: "Number 1 Türk",
-      logo: BASE_LOGO + "number-1-turk-tr.png",
+      logo: BASE_LOGO + "nr1-turk-tr.png",
       genre: "Music", country: "TR",
       streams: [
         { url: "https://mn-nl.mncdn.com/blutv_nr1turk2/live.m3u8", title: "Number 1 Türk HD" }
@@ -316,7 +313,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_number1_tv", name: "Number 1 TV",
-      logo: BASE_LOGO + "number-1-turk-tr.png",
+      logo: BASE_LOGO + "nr1-tr.png",
       genre: "Music", country: "TR",
       streams: [
         { url: "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/playlist.m3u8", title: "Number 1 TV HD" }
