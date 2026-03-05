@@ -1,0 +1,14 @@
+{
+  "name": "nuvio-live-tv-addon",
+  "version": "1.0.0",
+  "description": "Nuvio/Stremio uyumlu Türk Canlı TV eklentisi",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18"
+  }
+}

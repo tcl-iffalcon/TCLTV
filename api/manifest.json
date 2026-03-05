@@ -1,0 +1,32 @@
+{
+  "id": "com.nuvio.livetv.turkish",
+  "version": "1.0.0",
+  "name": "🇹🇷 Türk Canlı TV",
+  "description": "Türkçe, Spor, Haber ve Uluslararası canlı TV kanalları",
+  "logo": "https://i.imgur.com/MZnMQZt.png",
+  "resources": ["stream", "catalog", "meta"],
+  "types": ["tv"],
+  "catalogs": [
+    {
+      "type": "tv",
+      "id": "turk-kanallar",
+      "name": "🇹🇷 Türkçe Kanallar"
+    },
+    {
+      "type": "tv",
+      "id": "spor-kanallar",
+      "name": "⚽ Spor Kanalları"
+    },
+    {
+      "type": "tv",
+      "id": "haber-kanallar",
+      "name": "📰 Haber Kanalları"
+    },
+    {
+      "type": "tv",
+      "id": "uluslararasi-kanallar",
+      "name": "🌍 Uluslararası Kanallar"
+    }
+  ],
+  "idPrefixes": ["livetv_"]
+}
