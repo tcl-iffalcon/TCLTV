@@ -2,7 +2,7 @@
   "id": "com.nuvio.livetv.turkish",
   "version": "1.0.0",
   "name": "TCLTVTURK CANLI TV",
-  "description": "Türkçe canlı TV kanalları",
+  "description": "Nuvio ve Stremio uyumlu, Türk kanallarını barındıran Canlı TV eklentisi.",
   "logo": "https://raw.githubusercontent.com/tcl-iffalcon/TCLTV/main/public/tcltvturk_logo.svg",
   "resources": ["stream", "catalog", "meta"],
   "types": ["tv"],
