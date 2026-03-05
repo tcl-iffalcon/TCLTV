@@ -72,8 +72,7 @@ const CHANNELS = {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Fox_TV_logo_turkey.svg/120px-Fox_TV_logo_turkey.svg.png",
       genre: "General", country: "TR",
       streams: [
-        { url: "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8", title: "NOW TV HD" },
-        { url: "http://116.202.238.88/FOXTV_TR/index.m3u8", title: "NOW TV (2)" }
+        { url: "http://116.202.238.88/FOXTV_TR/index.m3u8", title: "NOW TV" }
       ]
     },
     {
@@ -81,8 +80,7 @@ const CHANNELS = {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/TV8_logo.svg/120px-TV8_logo.svg.png",
       genre: "General", country: "TR",
       streams: [
-        { url: "https://tv8-live.daioncdn.net/tv8/tv8.m3u8", title: "TV8 HD" },
-        { url: "https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3", title: "TV8 HD (2)" }
+        { url: "https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3", title: "TV8 HD" }
       ]
     },
     {
@@ -125,9 +123,8 @@ const CHANNELS = {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Bloomberg_HT.png/120px-Bloomberg_HT.png",
       genre: "News", country: "TR",
       streams: [
-        { url: "https://ciner-live.daioncdn.net/bloomberght/bloomberght.m3u8", title: "Bloomberg HT HD" },
-        { url: "https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8", title: "Bloomberg HT (2)" },
-        { url: "https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8", title: "Bloomberg HT (3)" }
+        { url: "https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8", title: "Bloomberg HT" },
+        { url: "https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8", title: "Bloomberg HT (1)" }
       ]
     },
     {
@@ -135,8 +132,7 @@ const CHANNELS = {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Haberturk_logo.svg/120px-Haberturk_logo.svg.png",
       genre: "News", country: "TR",
       streams: [
-        { url: "https://ciner-live.daioncdn.net/haberturktv/haberturktv.m3u8", title: "Habertürk HD" },
-        { url: "https://tv.ensonhaber.com/haberturk/haberturk.m3u8", title: "Habertürk (2)" }
+        { url: "https://tv.ensonhaber.com/haberturk/haberturk.m3u8", title: "Habertürk" }
       ]
     },
     {
@@ -145,7 +141,6 @@ const CHANNELS = {
       genre: "News", country: "TR",
       streams: [
         { url: "https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8", title: "Haber Global HD" },
-        { url: "https://haberglobaldvr.blutv.com/blutv_haberglobal_dvr/live.m3u8", title: "Haber Global (2)" }
       ]
     },
     {
@@ -223,9 +218,7 @@ const CHANNELS = {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
       genre: "Music", country: "TR",
       streams: [
-        { url: "https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlist.m3u8", title: "Power Türk HD" },
-        { url: "https://mn-nl.mncdn.com/blutv_powerturk/smil:powerturk_sd.smil/playlist.m3u8", title: "Power Türk (2)" },
-        { url: "https://powerturk.blutv.com/blutv_powerturk/powerturk_sd.smil/playlist.m3u8", title: "Power Türk (3)" }
+        { url: "https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlist.m3u8", title: "Power Türk HD" }
       ]
     },
     {
