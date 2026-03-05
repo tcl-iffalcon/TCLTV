@@ -1,5 +1,5 @@
 {
-  "name": "nuvio-live-tv-addon",
+  "name": "TCLTVTURK CANLI TV",
   "version": "1.0.0",
   "description": "Nuvio ve Stremio uyumlu, Türk kanallarını barındıran Canlı TV eklentisi.",
   "main": "api/index.js",
