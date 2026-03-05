@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "name": "🇹🇷 TCLTVTURK CANLI TV",
   "description": "Türkçe canlı TV kanalları",
-  "logo": "logo": "https://raw.githubusercontent.com/tcl-iffalcon/TCLTV/main/public/tcltvturk_logo.svg",
+  "logo": "https://raw.githubusercontent.com/tcl-iffalcon/TCLTV/main/public/tcltvturk_logo.svg",
   "resources": ["stream", "catalog", "meta"],
   "types": ["tv"],
   "catalogs": [
