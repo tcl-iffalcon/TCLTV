@@ -23,6 +23,9 @@ const CHANNELS = {
     {
       id: "livetv_trt3", name: "TRT 3",
       logo: BASE_LOGO + "trt-3-tr.png",
+      genre: "General", country: "TR",
+      streams: [
+        { url: "https://tv-trt3.live.trt.com.tr/master.m3u8", title: "TRT 3" }
       ]
     },
     {
