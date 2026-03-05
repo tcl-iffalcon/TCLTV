@@ -1,137 +1,112 @@
-// Kanal veritabanı - Güncel ve çalışan stream URL'leri (2025)
-// Her kanal için birden fazla yedek URL var
-
 const CHANNELS = {
-  "turk-kanallar": [
+  "genel": [
     {
       id: "livetv_trt1", name: "TRT 1",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-1-tr.png",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/TRT_1_logo_%282021-%29.svg/120px-TRT_1_logo_%282021-%29.svg.png",
       genre: "General", country: "TR",
       streams: [
-        { url: "https://tv-trt1-dai.medya.trt.com.tr/master.m3u8", title: "TRT 1 HD" },
-        { url: "https://tv-trt1.medya.trt.com.tr/master.m3u8", title: "TRT 1 HD (2)" },
-        { url: "https://trt.daioncdn.net/trt-1/master.m3u8?app=web", title: "TRT 1 HD (3)" }
+        { url: "https://trt.daioncdn.net/trt-1/master.m3u8?app=web", title: "TRT 1 HD" },
+        { url: "https://tv-trt1.medya.trt.com.tr/master.m3u8", title: "TRT 1 HD (2)" }
       ]
     },
     {
       id: "livetv_trt2", name: "TRT 2",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-2-tr.png",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
       genre: "General", country: "TR",
       streams: [
-        { url: "https://tv-trt2.medya.trt.com.tr/master.m3u8", title: "TRT 2 HD" },
-        { url: "https://trt.daioncdn.net/trt-2/master.m3u8?app=web", title: "TRT 2 HD (2)" }
+        { url: "https://tv-trt2.medya.trt.com.tr/master.m3u8", title: "TRT 2 HD" }
       ]
     },
     {
-      id: "livetv_show", name: "Show TV",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/show-tr.png",
+      id: "livetv_trt3", name: "TRT 3",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
       genre: "General", country: "TR",
       streams: [
-        { url: "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01602-themahqfrance-vivekanald-samsungspain/playlist.m3u8", title: "Show TV" },
-        { url: "https://ciner-live.daioncdn.net/showtv/showtv.m3u8", title: "Show TV (2)" }
+        { url: "https://tv-trt3.live.trt.com.tr/master.m3u8", title: "TRT 3" }
+      ]
+    },
+    {
+      id: "livetv_trt_belgesel", name: "TRT Belgesel",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "Documentary", country: "TR",
+      streams: [
+        { url: "https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8", title: "TRT Belgesel" }
       ]
     },
     {
       id: "livetv_atv", name: "ATV",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/atv-tr.png",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/ATV_Turkey_logo.svg/120px-ATV_Turkey_logo.svg.png",
       genre: "General", country: "TR",
       streams: [
-        { url: "https://trkvz-live.daioncdn.net/atv/atv.m3u8", title: "ATV HD" }
+        { url: "http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8", title: "ATV" },
+        { url: "http://89.187.191.41/ATV-HD-TR/video.m3u8", title: "ATV HD (2)" },
+        { url: "http://116.202.238.88/ATV_TR/index.m3u8", title: "ATV HD (3)" }
       ]
     },
     {
       id: "livetv_kanald", name: "Kanal D",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/kanal-d-tr.png",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Kanal_D_logo.svg/120px-Kanal_D_logo.svg.png",
       genre: "General", country: "TR",
       streams: [
-        { url: "https://mn-nl.mncdn.com/blutv_kanald/smil:kanald_sd.smil/playlist.m3u8", title: "Kanal D" }
+        { url: "https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3", title: "Kanal D HD" }
+      ]
+    },
+    {
+      id: "livetv_show", name: "Show TV",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Show_TV_logo.svg/120px-Show_TV_logo.svg.png",
+      genre: "General", country: "TR",
+      streams: [
+        { url: "https://ciner-live.daioncdn.net/showtv/showtv.m3u8", title: "Show TV HD" }
       ]
     },
     {
       id: "livetv_startv", name: "Star TV",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/star-tv-tr.png",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Star_TV_logo.svg/120px-Star_TV_logo.svg.png",
       genre: "General", country: "TR",
       streams: [
         { url: "https://dogus-live.daioncdn.net/startv/startv.m3u8", title: "Star TV HD" }
       ]
     },
     {
-      id: "livetv_foxtv", name: "FOX TV",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/fox-tr.png",
+      id: "livetv_nowtv", name: "NOW TV",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Fox_TV_logo_turkey.svg/120px-Fox_TV_logo_turkey.svg.png",
       genre: "General", country: "TR",
       streams: [
-        { url: "https://mn-nl.mncdn.com/blutv_foxtv/smil:foxtv_sd.smil/chunklist.m3u8", title: "FOX TV" }
+        { url: "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8", title: "NOW TV HD" },
+        { url: "http://116.202.238.88/FOXTV_TR/index.m3u8", title: "NOW TV (2)" }
       ]
     },
     {
       id: "livetv_tv8", name: "TV8",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/tv8-tr.png",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/TV8_logo.svg/120px-TV8_logo.svg.png",
       genre: "General", country: "TR",
       streams: [
-        { url: "https://tv8-live.daioncdn.net/tv8/tv8.m3u8", title: "TV8 HD" }
+        { url: "https://tv8-live.daioncdn.net/tv8/tv8.m3u8", title: "TV8 HD" },
+        { url: "https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3", title: "TV8 HD (2)" }
       ]
     },
     {
-      id: "livetv_trt_cocuk", name: "TRT Çocuk",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-cocuk-tr.png",
-      genre: "Kids", country: "TR",
+      id: "livetv_halktv", name: "Halk TV",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "General", country: "TR",
       streams: [
-        { url: "https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8", title: "TRT Çocuk HD" }
-      ]
-    },
-    {
-      id: "livetv_trt_muzik", name: "TRT Müzik",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-muzik-tr.png",
-      genre: "Music", country: "TR",
-      streams: [
-        { url: "https://tv-trtmuzik.medya.trt.com.tr/master.m3u8", title: "TRT Müzik HD" },
-        { url: "https://trt.daioncdn.net/trt-muzik/master.m3u8?app=web", title: "TRT Müzik (2)" }
+        { url: "https://halktv-live.daioncdn.net/halktv/halktv.m3u8", title: "Halk TV HD" }
       ]
     }
   ],
 
-  "spor-kanallar": [
-    {
-      id: "livetv_trt_spor", name: "TRT Spor",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-spor-tr.png",
-      genre: "Sports", country: "TR",
-      streams: [
-        { url: "https://tv-trtspor1.medya.trt.com.tr/master.m3u8", title: "TRT Spor HD" },
-        { url: "https://tv-trtspor1-dai.medya.trt.com.tr/master.m3u8", title: "TRT Spor HD (2)" }
-      ]
-    },
-    {
-      id: "livetv_trt_spor2", name: "TRT Spor Yıldız",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-spor-yildiz-tr.png",
-      genre: "Sports", country: "TR",
-      streams: [
-        { url: "https://tv-trtspor2.medya.trt.com.tr/master.m3u8", title: "TRT Spor Yıldız HD" },
-        { url: "https://tv-trtspor2-dai.medya.trt.com.tr/master.m3u8", title: "TRT Spor Yıldız (2)" }
-      ]
-    },
-    {
-      id: "livetv_aspor", name: "A Spor",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/a-spor-tr.png",
-      genre: "Sports", country: "TR",
-      streams: [
-        { url: "https://trkvz-live.daioncdn.net/aspor/aspor.m3u8", title: "A Spor HD" }
-      ]
-    }
-  ],
-
-  "haber-kanallar": [
+  "haber": [
     {
       id: "livetv_trt_haber", name: "TRT Haber",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-haber-tr.png",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/TRT_Haber_logo.svg/120px-TRT_Haber_logo.svg.png",
       genre: "News", country: "TR",
       streams: [
-        { url: "https://tv-trthaber.medya.trt.com.tr/master_720.m3u8", title: "TRT Haber HD" },
-        { url: "https://tv-trthaber-dai.medya.trt.com.tr/master.m3u8", title: "TRT Haber (2)" }
+        { url: "https://tv-trthaber.medya.trt.com.tr/master.m3u8", title: "TRT Haber HD" }
       ]
     },
     {
       id: "livetv_cnn_turk", name: "CNN Türk",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/cnn-turk-tr.png",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/CNN_T%C3%BCrk_logo.svg/120px-CNN_T%C3%BCrk_logo.svg.png",
       genre: "News", country: "TR",
       streams: [
         { url: "https://cnnturk.daioncdn.net/cnnturk/cnnturk.m3u8", title: "CNN Türk HD" }
@@ -139,78 +114,134 @@ const CHANNELS = {
     },
     {
       id: "livetv_ntv", name: "NTV",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/ntv-tr.png",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/NTV_Turkey_logo.svg/120px-NTV_Turkey_logo.svg.png",
       genre: "News", country: "TR",
       streams: [
-        { url: "https://dogusyayingrubu-live.daioncdn.net/ntv/ntv.m3u8", title: "NTV HD" }
+        { url: "https://dogus-live.daioncdn.net/ntv/ntv.m3u8", title: "NTV HD" }
       ]
     },
     {
-      id: "livetv_haberturk", name: "Haber Türk",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/haberturk-tr.png",
+      id: "livetv_bloomberg", name: "Bloomberg HT",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Bloomberg_HT.png/120px-Bloomberg_HT.png",
       genre: "News", country: "TR",
       streams: [
-        { url: "https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv_1080p.m3u8", title: "Haber Türk HD" }
+        { url: "https://ciner-live.daioncdn.net/bloomberght/bloomberght.m3u8", title: "Bloomberg HT HD" },
+        { url: "https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8", title: "Bloomberg HT (2)" },
+        { url: "https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8", title: "Bloomberg HT (3)" }
       ]
     },
     {
-      id: "livetv_aljazeera", name: "Al Jazeera English",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/qatar/al-jazeera-english-qa.png",
-      genre: "News", country: "QA",
+      id: "livetv_haberturk", name: "Habertürk",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Haberturk_logo.svg/120px-Haberturk_logo.svg.png",
+      genre: "News", country: "TR",
       streams: [
-        { url: "https://live-hls-web-aje.getaj.net/AJE/index.m3u8", title: "Al Jazeera EN HD" }
+        { url: "https://ciner-live.daioncdn.net/haberturktv/haberturktv.m3u8", title: "Habertürk HD" },
+        { url: "https://tv.ensonhaber.com/haberturk/haberturk.m3u8", title: "Habertürk (2)" }
       ]
     },
     {
-      id: "livetv_france24", name: "France 24 English",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/france/france-24-fr.png",
-      genre: "News", country: "FR",
+      id: "livetv_haberglobal", name: "Haber Global",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "News", country: "TR",
       streams: [
-        { url: "https://stream.france24.com/hls/live/2037218/F24_EN_LO_HLS/master.m3u8", title: "France 24 EN HD" }
+        { url: "https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8", title: "Haber Global HD" },
+        { url: "https://haberglobaldvr.blutv.com/blutv_haberglobal_dvr/live.m3u8", title: "Haber Global (2)" }
       ]
     },
     {
-      id: "livetv_dw", name: "DW News English",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/dw-de.png",
-      genre: "News", country: "DE",
+      id: "livetv_cnbce", name: "CNBC-e",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "News", country: "TR",
       streams: [
-        { url: "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8", title: "DW News HD" }
+        { url: "https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8", title: "CNBC-e HD" }
       ]
     }
   ],
 
-  "uluslararasi-kanallar": [
+  "spor": [
     {
-      id: "livetv_trt_world", name: "TRT World",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-world-tr.png",
-      genre: "News", country: "TR",
+      id: "livetv_trt_spor", name: "TRT Spor",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/TRT_Spor_logo.svg/120px-TRT_Spor_logo.svg.png",
+      genre: "Sports", country: "TR",
       streams: [
-        { url: "https://tv-trtworld.live.trt.com.tr/master.m3u8", title: "TRT World HD" },
-        { url: "https://api.trtworld.com/livestream/v1/WcM3Oa2LHD9iUjWDSRUI335NkMWVTUV351H56dqC/master.m3u8", title: "TRT World HD (2)" }
+        { url: "https://tv-trtspor1.medya.trt.com.tr/master.m3u8", title: "TRT Spor HD" }
       ]
     },
     {
-      id: "livetv_euronews", name: "Euronews English",
-      logo: "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/france/euronews-fr.png",
-      genre: "News", country: "FR",
+      id: "livetv_trt_spor2", name: "TRT Spor Yıldız",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/TRT_Spor_Y%C4%B1ld%C4%B1z_logo.svg/120px-TRT_Spor_Y%C4%B1ld%C4%B1z_logo.svg.png",
+      genre: "Sports", country: "TR",
       streams: [
-        { url: "https://euronews-euronews-en-live.hls.cedexis.com/hls/live/euronews_en.m3u8", title: "Euronews EN HD" }
+        { url: "https://tv-trtspor2.medya.trt.com.tr/master.m3u8", title: "TRT Spor Yıldız HD" }
       ]
     },
     {
-      id: "livetv_nasa", name: "NASA TV",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/200px-NASA_logo.svg.png",
-      genre: "Science", country: "US",
+      id: "livetv_tabii_spor6", name: "Tabii Spor 6",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/TRT_Spor_logo.svg/120px-TRT_Spor_logo.svg.png",
+      genre: "Sports", country: "TR",
       streams: [
-        { url: "https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/index.m3u8", title: "NASA TV HD" }
+        { url: "https://vbtob9hyq58eiophct5qctxr2.medya.trt.com.tr/master.m3u8", title: "Tabii Spor 6" }
       ]
     },
     {
-      id: "livetv_cgtn", name: "CGTN English",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN_English_Logo.svg/200px-CGTN_English_Logo.svg.png",
-      genre: "News", country: "CN",
+      id: "livetv_ht_spor", name: "HT Spor",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/TRT_Spor_logo.svg/120px-TRT_Spor_logo.svg.png",
+      genre: "Sports", country: "TR",
       streams: [
-        { url: "https://news.cgtn.com/resource/live/english/cgtn-news.m3u8", title: "CGTN EN HD" }
+        { url: "https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web", title: "HT Spor HD" }
+      ]
+    },
+    {
+      id: "livetv_s_sport", name: "S Sport",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/TRT_Spor_logo.svg/120px-TRT_Spor_logo.svg.png",
+      genre: "Sports", country: "TR",
+      streams: [
+        { url: "https://bcovlive-a.akamaihd.net/540fcb034b144b848e7ff887f61a293a/eu-central-1/6415845530001/profile_0/chunklist.m3u8", title: "S Sport" }
+      ]
+    },
+    {
+      id: "livetv_s_sport2", name: "S Sport 2",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/TRT_Spor_logo.svg/120px-TRT_Spor_logo.svg.png",
+      genre: "Sports", country: "TR",
+      streams: [
+        { url: "https://bcovlive-a.akamaihd.net/29c60f23ea4840ba8726925a77fcfd0b/eu-central-1/6415845530001/profile_0/chunklist.m3u8", title: "S Sport 2" }
+      ]
+    },
+    {
+      id: "livetv_sports_tv", name: "Sports TV",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/TRT_Spor_logo.svg/120px-TRT_Spor_logo.svg.png",
+      genre: "Sports", country: "TR",
+      streams: [
+        { url: "https://live.sportstv.com.tr/hls/low/sportstv.m3u8", title: "Sports TV" }
+      ]
+    }
+  ],
+
+  "muzik": [
+    {
+      id: "livetv_power_turk", name: "Power Türk TV",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "Music", country: "TR",
+      streams: [
+        { url: "https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlist.m3u8", title: "Power Türk HD" },
+        { url: "https://mn-nl.mncdn.com/blutv_powerturk/smil:powerturk_sd.smil/playlist.m3u8", title: "Power Türk (2)" },
+        { url: "https://powerturk.blutv.com/blutv_powerturk/powerturk_sd.smil/playlist.m3u8", title: "Power Türk (3)" }
+      ]
+    },
+    {
+      id: "livetv_trt_muzik", name: "TRT Müzik",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/TRT_M%C3%BCzik_logo.svg/120px-TRT_M%C3%BCzik_logo.svg.png",
+      genre: "Music", country: "TR",
+      streams: [
+        { url: "https://tv-trtmuzik.medya.trt.com.tr/master.m3u8", title: "TRT Müzik HD" }
+      ]
+    },
+    {
+      id: "livetv_dream_turk", name: "Dream Türk",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "Music", country: "TR",
+      streams: [
+        { url: "https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8", title: "Dream Türk HD" }
       ]
     }
   ]
