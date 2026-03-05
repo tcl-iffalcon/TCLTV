@@ -56,7 +56,8 @@ const CHANNELS = {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Show_TV_logo.svg/120px-Show_TV_logo.svg.png",
       genre: "General", country: "TR",
       streams: [
-        { url: "https://ciner-live.daioncdn.net/showtv/showtv.m3u8", title: "Show TV HD" }
+        { url: "https://canli.ensonhaber.com/tr/showtv/index.m3u8", title: "Show TV HD" },
+        { url: "https://ciner-live.daioncdn.net/showtv/showtv.m3u8", title: "Show TV (2)" }
       ]
     },
     {
@@ -72,7 +73,8 @@ const CHANNELS = {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Fox_TV_logo_turkey.svg/120px-Fox_TV_logo_turkey.svg.png",
       genre: "General", country: "TR",
       streams: [
-        { url: "http://116.202.238.88/FOXTV_TR/index.m3u8", title: "NOW TV" }
+        { url: "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8", title: "NOW TV HD" },
+        { url: "http://116.202.238.88/FOXTV_TR/index.m3u8", title: "NOW TV (2)" }
       ]
     },
     {
@@ -80,7 +82,8 @@ const CHANNELS = {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/TV8_logo.svg/120px-TV8_logo.svg.png",
       genre: "General", country: "TR",
       streams: [
-        { url: "https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3", title: "TV8 HD" }
+        { url: "https://tv8-live.daioncdn.net/tv8/tv8.m3u8", title: "TV8 HD" },
+        { url: "https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3", title: "TV8 HD (2)" }
       ]
     },
     {
@@ -107,7 +110,8 @@ const CHANNELS = {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/CNN_T%C3%BCrk_logo.svg/120px-CNN_T%C3%BCrk_logo.svg.png",
       genre: "News", country: "TR",
       streams: [
-        { url: "https://cnnturk.daioncdn.net/cnnturk/cnnturk.m3u8", title: "CNN Türk HD" }
+        { url: "https://live.duhnet.tv/S2/HLS_LIVE/cnnturknp/track_1_320/playlist.m3u8", title: "CNN Türk HD" },
+        { url: "https://cnnturk.daioncdn.net/cnnturk/cnnturk.m3u8", title: "CNN Türk (2)" }
       ]
     },
     {
@@ -115,7 +119,8 @@ const CHANNELS = {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/NTV_Turkey_logo.svg/120px-NTV_Turkey_logo.svg.png",
       genre: "News", country: "TR",
       streams: [
-        { url: "https://dogus-live.daioncdn.net/ntv/ntv.m3u8", title: "NTV HD" }
+        { url: "https://dogus-live.daioncdn.net/ntv/ntv.m3u8", title: "NTV HD" },
+        { url: "https://dogusyayingrubu-live.daioncdn.net/ntv/ntv.m3u8", title: "NTV (2)" }
       ]
     },
     {
@@ -123,8 +128,9 @@ const CHANNELS = {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Bloomberg_HT.png/120px-Bloomberg_HT.png",
       genre: "News", country: "TR",
       streams: [
-        { url: "https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8", title: "Bloomberg HT" },
-        { url: "https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8", title: "Bloomberg HT (1)" }
+        { url: "https://ciner-live.daioncdn.net/bloomberght/bloomberght.m3u8", title: "Bloomberg HT HD" },
+        { url: "https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8", title: "Bloomberg HT (2)" },
+        { url: "https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8", title: "Bloomberg HT (3)" }
       ]
     },
     {
@@ -132,7 +138,8 @@ const CHANNELS = {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Haberturk_logo.svg/120px-Haberturk_logo.svg.png",
       genre: "News", country: "TR",
       streams: [
-        { url: "https://tv.ensonhaber.com/haberturk/haberturk.m3u8", title: "Habertürk" }
+        { url: "https://ciner-live.daioncdn.net/haberturktv/haberturktv.m3u8", title: "Habertürk HD" },
+        { url: "https://tv.ensonhaber.com/haberturk/haberturk.m3u8", title: "Habertürk (2)" }
       ]
     },
     {
@@ -141,6 +148,7 @@ const CHANNELS = {
       genre: "News", country: "TR",
       streams: [
         { url: "https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8", title: "Haber Global HD" },
+        { url: "https://haberglobaldvr.blutv.com/blutv_haberglobal_dvr/live.m3u8", title: "Haber Global (2)" }
       ]
     },
     {
@@ -149,6 +157,14 @@ const CHANNELS = {
       genre: "News", country: "TR",
       streams: [
         { url: "https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8", title: "CNBC-e HD" }
+      ]
+    },
+    {
+      id: "livetv_tv100", name: "TV100",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "News", country: "TR",
+      streams: [
+        { url: "https://tv100-live.daioncdn.net/tv100/tv100.m3u8", title: "TV100 HD" }
       ]
     }
   ],
@@ -187,22 +203,6 @@ const CHANNELS = {
       ]
     },
     {
-      id: "livetv_s_sport", name: "S Sport",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/TRT_Spor_logo.svg/120px-TRT_Spor_logo.svg.png",
-      genre: "Sports", country: "TR",
-      streams: [
-        { url: "https://bcovlive-a.akamaihd.net/540fcb034b144b848e7ff887f61a293a/eu-central-1/6415845530001/profile_0/chunklist.m3u8", title: "S Sport" }
-      ]
-    },
-    {
-      id: "livetv_s_sport2", name: "S Sport 2",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/TRT_Spor_logo.svg/120px-TRT_Spor_logo.svg.png",
-      genre: "Sports", country: "TR",
-      streams: [
-        { url: "https://bcovlive-a.akamaihd.net/29c60f23ea4840ba8726925a77fcfd0b/eu-central-1/6415845530001/profile_0/chunklist.m3u8", title: "S Sport 2" }
-      ]
-    },
-    {
       id: "livetv_sports_tv", name: "Sports TV",
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/TRT_Spor_logo.svg/120px-TRT_Spor_logo.svg.png",
       genre: "Sports", country: "TR",
@@ -218,7 +218,49 @@ const CHANNELS = {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
       genre: "Music", country: "TR",
       streams: [
-        { url: "https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlist.m3u8", title: "Power Türk HD" }
+        { url: "https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8", title: "Power Türk HD" },
+        { url: "https://mn-nl.mncdn.com/blutv_powerturk/smil:powerturk_sd.smil/playlist.m3u8", title: "Power Türk (2)" },
+        { url: "https://powerturk.blutv.com/blutv_powerturk/powerturk_sd.smil/playlist.m3u8", title: "Power Türk (3)" }
+      ]
+    },
+    {
+      id: "livetv_power_love", name: "Power Love",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "Music", country: "TR",
+      streams: [
+        { url: "https://livetv.powerapp.com.tr/plove/love.smil/playlist.m3u8", title: "Power Love HD" }
+      ]
+    },
+    {
+      id: "livetv_power_dance", name: "Power Dance",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "Music", country: "TR",
+      streams: [
+        { url: "https://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8", title: "Power Dance HD" }
+      ]
+    },
+    {
+      id: "livetv_power_akustik", name: "Power Akustik",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "Music", country: "TR",
+      streams: [
+        { url: "https://livetv.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8", title: "Power Akustik HD" }
+      ]
+    },
+    {
+      id: "livetv_power_slow", name: "Power Slow",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "Music", country: "TR",
+      streams: [
+        { url: "https://livetv.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8", title: "Power Slow HD" }
+      ]
+    },
+    {
+      id: "livetv_power_taptaze", name: "Power Taptaze",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "Music", country: "TR",
+      streams: [
+        { url: "https://livetv.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8", title: "Power Taptaze HD" }
       ]
     },
     {
@@ -235,6 +277,46 @@ const CHANNELS = {
       genre: "Music", country: "TR",
       streams: [
         { url: "https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8", title: "Dream Türk HD" }
+      ]
+    },
+    {
+      id: "livetv_number1_ask", name: "Number 1 Aşk",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "Music", country: "TR",
+      streams: [
+        { url: "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e18f9cea15_1/playlist.m3u8", title: "Number 1 Aşk HD" }
+      ]
+    },
+    {
+      id: "livetv_number1_damar", name: "Number 1 Damar",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "Music", country: "TR",
+      streams: [
+        { url: "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e198784bdc_1/playlist.m3u8", title: "Number 1 Damar HD" }
+      ]
+    },
+    {
+      id: "livetv_number1_dance", name: "Number 1 Dance",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "Music", country: "TR",
+      streams: [
+        { url: "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2aa8acf44_1/playlist.m3u8", title: "Number 1 Dance HD" }
+      ]
+    },
+    {
+      id: "livetv_number1_turk", name: "Number 1 Türk",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "Music", country: "TR",
+      streams: [
+        { url: "https://mn-nl.mncdn.com/blutv_nr1turk2/live.m3u8", title: "Number 1 Türk HD" }
+      ]
+    },
+    {
+      id: "livetv_number1_tv", name: "Number 1 TV",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TRT_2_logo.svg/120px-TRT_2_logo.svg.png",
+      genre: "Music", country: "TR",
+      streams: [
+        { url: "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/playlist.m3u8", title: "Number 1 TV HD" }
       ]
     }
   ]
