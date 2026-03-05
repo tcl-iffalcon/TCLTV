@@ -10,7 +10,8 @@
     { "type": "tv", "id": "genel", "name": "📺 Genel" },
     { "type": "tv", "id": "haber", "name": "📰 Haber" },
     { "type": "tv", "id": "spor", "name": "⚽ Spor" },
-    { "type": "tv", "id": "muzik", "name": "🎵 Müzik" }
+    { "type": "tv", "id": "muzik", "name": "🎵 Müzik" },
+    { "type": "tv", "id": "cocuk", "name": "🧸 Çocuk" }
   ],
   "idPrefixes": ["livetv_"]
 }
