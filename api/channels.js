@@ -60,7 +60,7 @@ const CHANNELS = {
       genre: "General", country: "TR",
       streams: [
         { url: "https://canli.ensonhaber.com/tr/showtv/index.m3u8", title: "Show TV HD" },
-        { url: "https://ciner-live.daioncdn.net/showtv/showtv.m3u8", title: "Show TV (2)" }
+        { url: "https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558", title: "Show TV (2)" }
       ]
     },
     {
@@ -68,7 +68,8 @@ const CHANNELS = {
       logo: BASE_LOGO + "star-tv-tr.png",
       genre: "General", country: "TR",
       streams: [
-        { url: "https://dogus-live.daioncdn.net/startv/startv.m3u8", title: "Star TV HD" }
+        { url: "https://dogus-live.daioncdn.net/startv/startv.m3u8", title: "Star TV HD" },
+        { url: "http://dygvideo.dygdigital.com/live/hls/startv4puhu?m3u8", title: "Star TV (2)" }
       ]
     },
     {
@@ -90,11 +91,51 @@ const CHANNELS = {
       ]
     },
     {
+      id: "livetv_tv8_5", name: "TV8,5",
+      logo: "https://i.ibb.co/dgj3MTh/tv85.png",
+      genre: "General", country: "TR",
+      streams: [
+        { url: "https://tv8.daioncdn.net/tv8bucuk/tv8bucuk.m3u8?app=tv8bucuk_web", title: "TV8,5 HD" }
+      ]
+    },
+    {
       id: "livetv_halktv", name: "Halk TV",
       logo: BASE_LOGO + "halk-tv-tr.png",
       genre: "General", country: "TR",
       streams: [
         { url: "https://halktv-live.daioncdn.net/halktv/halktv.m3u8", title: "Halk TV HD" }
+      ]
+    },
+    {
+      id: "livetv_teve2", name: "TEVE2",
+      logo: BASE_LOGO + "teve2-tr.png",
+      genre: "General", country: "TR",
+      streams: [
+        { url: "http://live.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8", title: "TEVE2 HD" }
+      ]
+    },
+    {
+      id: "livetv_tlc", name: "TLC",
+      logo: "http://assets.tvcdn.net/9871d781-b961-45cc-a287-c304f02bef1d.png",
+      genre: "General", country: "TR",
+      streams: [
+        { url: "http://dygvideo.dygdigital.com/live/hls/tlctvdai?m3u8", title: "TLC HD" }
+      ]
+    },
+    {
+      id: "livetv_dmax", name: "DMAX",
+      logo: "http://assets.tvcdn.net/32da9e04-0514-4e3c-b8e1-854f1fc175ed.png",
+      genre: "General", country: "TR",
+      streams: [
+        { url: "http://dygvideo.dygdigital.com/live/hls/dmaxdai?m3u8", title: "DMAX HD" }
+      ]
+    },
+    {
+      id: "livetv_a2", name: "A2",
+      logo: BASE_LOGO + "a2-tr.png",
+      genre: "General", country: "TR",
+      streams: [
+        { url: "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8", title: "A2 HD" }
       ]
     }
   ],
@@ -123,7 +164,7 @@ const CHANNELS = {
       genre: "News", country: "TR",
       streams: [
         { url: "https://dogus-live.daioncdn.net/ntv/ntv.m3u8", title: "NTV HD" },
-        { url: "https://dogusyayingrubu-live.daioncdn.net/ntv/ntv.m3u8", title: "NTV (2)" }
+        { url: "http://dygvideo.dygdigital.com/live/hls/ntv4puhu?m3u8", title: "NTV (2)" }
       ]
     },
     {
@@ -169,6 +210,14 @@ const CHANNELS = {
       streams: [
         { url: "https://tv100-live.daioncdn.net/tv100/tv100.m3u8", title: "TV100 HD" }
       ]
+    },
+    {
+      id: "livetv_sozcu", name: "Sözcü TV",
+      logo: "http://assets.tvcdn.net/491384df-7154-4404-8f97-2e7847655441.png",
+      genre: "News", country: "TR",
+      streams: [
+        { url: "https://trn03.tulix.tv/gt-sozcu-tv/playlist.m3u8", title: "Sözcü TV HD" }
+      ]
     }
   ],
 
@@ -202,7 +251,8 @@ const CHANNELS = {
       logo: BASE_LOGO + "haberturk-tr.png",
       genre: "Sports", country: "TR",
       streams: [
-        { url: "https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web", title: "HT Spor HD" }
+        { url: "https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web", title: "HT Spor HD" },
+        { url: "https://ciner-live.ercdn.net/htspor/htspor.m3u8", title: "HT Spor (2)" }
       ]
     },
     {
@@ -320,6 +370,25 @@ const CHANNELS = {
       genre: "Music", country: "TR",
       streams: [
         { url: "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/playlist.m3u8", title: "Number 1 TV HD" }
+      ]
+    }
+  ],
+
+  "cocuk": [
+    {
+      id: "livetv_trt_cocuk", name: "TRT Çocuk",
+      logo: BASE_LOGO + "trt-cocuk-tr.png",
+      genre: "Kids", country: "TR",
+      streams: [
+        { url: "https://tv-trtcocuk.medya.trt.com.tr/master.m3u8", title: "TRT Çocuk HD" }
+      ]
+    },
+    {
+      id: "livetv_babytv", name: "Baby TV",
+      logo: "https://i.imgur.com/4BDJ5FT.png",
+      genre: "Kids", country: "TR",
+      streams: [
+        { url: "https://saran-live.ercdn.net/babytv/index.m3u8", title: "Baby TV HD" }
       ]
     }
   ]
