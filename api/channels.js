@@ -197,7 +197,7 @@ const CHANNELS = {
     },
     {
       id: "livetv_cnbce", name: "CNBC-e",
-      logo: BASE_LOGO + "cnbc-e-tr.png",
+      logo: "https://i.ibb.co/kcpSwmK/cnbce.png",
       genre: "News", country: "TR",
       streams: [
         { url: "https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8", title: "CNBC-e HD" }
