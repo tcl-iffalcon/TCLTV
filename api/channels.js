@@ -154,7 +154,7 @@ const CHANNELS = {
       logo: BASE_LOGO + "cnn-turk-tr.png",
       genre: "News", country: "TR",
       streams: [
-        { url: "https://live.duhnet.tv/S2/HLS_LIVE/cnnturknp/track_1_320/playlist.m3u8", title: "CNN Türk HD" },
+        { url: "https://streams.uzunmuhalefet.com/stream/b9cb7e10-ef07-4379-ab36-039286fcd8f8.m3u8", title: "CNN Türk HD" }
         { url: "https://cnnturk.daioncdn.net/cnnturk/cnnturk.m3u8", title: "CNN Türk (2)" }
       ]
     },
@@ -216,7 +216,7 @@ const CHANNELS = {
       logo: "http://assets.tvcdn.net/491384df-7154-4404-8f97-2e7847655441.png",
       genre: "News", country: "TR",
       streams: [
-        { url: "https://trn03.tulix.tv/gt-sozcu-tv/playlist.m3u8", title: "Sözcü TV HD" }
+        { url: "https://streams.uzunmuhalefet.com/stream/30f86caf-1b7e-4e62-8bdc-4729ea68492a.m3u8", title: "Sözcü TV HD" }
       ]
     }
   ],
