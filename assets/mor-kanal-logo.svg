@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="112" viewBox="0 0 200 112">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d0057"/>
+      <stop offset="100%" style="stop-color:#7b00cc"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="112" rx="10" fill="url(#bg)"/>
+  <text x="100" y="52" font-family="Arial Black,sans-serif" font-size="22" font-weight="900" fill="white" text-anchor="middle" letter-spacing="1">MOR</text>
+  <text x="100" y="80" font-family="Arial Black,sans-serif" font-size="22" font-weight="900" fill="#e0aaff" text-anchor="middle" letter-spacing="2">KANAL</text>
+  <rect x="30" y="88" width="140" height="3" rx="2" fill="#e0aaff" opacity="0.5"/>
+</svg>
