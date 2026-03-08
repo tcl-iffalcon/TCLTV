@@ -154,8 +154,8 @@ const CHANNELS = {
       logo: BASE_LOGO + "cnn-turk-tr.png",
       genre: "News", country: "TR",
       streams: [
-        { url: "https://streams.uzunmuhalefet.com/stream/b9cb7e10-ef07-4379-ab36-039286fcd8f8.m3u8", title: "CNN Türk HD" }
-        { url: "https://cnnturk.daioncdn.net/cnnturk/cnnturk.m3u8", title: "CNN Türk (2)" }
+        { url: "https://streams.uzunmuhalefet.com/...", title: "CNN Türk HD" },
+        { url: "https://cnnturk.daioncdn.net/...", title: "CNN Türk (2)" }
       ]
     },
     {
@@ -255,6 +255,17 @@ const CHANNELS = {
         { url: "https://ciner-live.ercdn.net/htspor/htspor.m3u8", title: "HT Spor (2)" }
       ]
     },
+   {
+  id: "livetv_mor_kanal", name: "Mor Kanal",
+  logo: "https://raw.githubusercontent.com/tcl-iffalcon/TCLTV/main/assets/mor-kanal.svg",
+  genre: "Sports", country: "TR",
+  streams: [
+    { url: "https://dga1op10s1u3leo.450bb93555fef8.click/live/sbeinsports-1/playlist.m3u8", title: "Mor Kanal 1" },
+    { url: "https://andro.5172948.xyz/checklist/androstreamlivebiraz1.m3u8", title: "Mor Kanal 2" },
+    { url: "https://andro.5172948.xyz/checklist/androstreamlivebs1.m3u8", title: "Mor Kanal 3" },
+    { url: "https://dga1op10s1u3leo.450bb93555fef8.click/live/xbeinsports-1/playlist.m3u8", title: "Mor Kanal 4" }
+  ]
+},
     {
       id: "livetv_sports_tv", name: "Sports TV",
       logo: BASE_LOGO + "sports-tv-tr.png",
